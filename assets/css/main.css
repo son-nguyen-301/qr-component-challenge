@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  /* Fonts */
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Outfit', serif;
+  --font-mono: 'Outfit', monospace;
+
+  /* Colors */
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
+
+  /* Typography */
+  --text-base: 0.9375rem;
+  --text-preset-1: 1.375rem;
+
+  /* Border Radius */
+  --radius-card: 1.25rem;
+  --radius-qr-code: 0.625rem;
+
+  /* Drop shadow */
+  --drop-shadow-card: 0 25px 25px #0000000c; 
+}
+
+@layer components {
+  .text-card-preset-1 {
+    font-size: var(--text-preset-1);
+    line-height: calc(1.2 / 1);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .text-card-preset-2 {
+    font-size: var(--text-base);
+    line-height: calc(1.4 / 1);
+    font-weight: var(--font-weight-normal);
+    letter-spacing: 0.0125;
+  }
+}
